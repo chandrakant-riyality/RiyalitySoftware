@@ -1,0 +1,62 @@
+
+      .post-container{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+        /* CSS for the post container */
+        .post {
+          
+            width: 50%;
+            margin-top: 30px;
+          margin-bottom: 20px;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            background-color: #f2f2f2;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        /* CSS for the image */
+        .post img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 5px;
+        }
+
+        /* CSS for the post description */
+        .post p {
+            margin: 10px 0;
+        }
+
+        /* CSS for the like and comment section */
+        .post .actions {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding-top: 10px;
+            border-top: 1px solid #ccc;
+        }
+
+        .post .actions .like i,
+        .post .actions .comment i {
+            margin-right: 5px;
+        }
+
+        .post .actions .like {
+            color: blue;
+            cursor: pointer;
+        }
+
+        .post .actions .comment {
+            color: green;
+            cursor: pointer;
+        }
+
+        @media (max-width: 768px) {
+            .post{
+                width: 100%;
+            }
+        }
+    

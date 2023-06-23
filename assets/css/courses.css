@@ -1,0 +1,79 @@
+.clients {
+    padding: 30px 0px;
+    background: beige;
+  }
+  
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  .section-heading {
+    text-align: center;
+    text-transform: capitalize;
+    font-size: 50px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-bottom: 100px;
+    color: #333;
+  }
+  
+  .carousel1 {
+    max-width: 1440px;
+    margin: 0 auto;
+    width: 95%;
+    height: 120px;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    position: relative;
+  }
+  
+  .carousel1::before,
+  .carousel1::after {
+    content: "";
+    width: 200px;
+    height: 100%;
+    position: absolute;
+  }
+  
+  .carousel1::before {
+    background-image: linear-gradient(
+      to left,
+      rgba(255, 255, 255, 0) 0,
+      beige 100%
+    );
+    z-index: 1;
+  }
+  
+  .carousel1::after {
+    background-image: linear-gradient(
+      to left,
+      beige 0,
+      rgba(255, 255, 255, 0) 100%
+    );
+    right: 0;
+  }
+  
+  .carousel1 .client-banners {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    animation: slide 20s linear infinite;
+  }
+  
+  .client-banners img {
+    max-height: 100%;
+    margin: 0 50px;
+  }
+  
+  @keyframes slide {
+    from {
+      transform: translateX(0);
+    }
+  
+    to {
+      transform: translateX(-100%);
+    }
+  }
+  

@@ -1,0 +1,176 @@
+
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  margin-bottom: 10px;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  color: #333;
+}
+
+
+nav ul {
+  display: flex;
+  justify-content: space-between;
+}
+
+nav ul li {
+  margin-right: 20px;
+}
+
+nav ul li:last-child {
+  margin-right: 0;
+}
+
+nav ul li a {
+  color: #fff;
+}
+
+/* Hero Section styles */
+.hero {
+  background-image: url('hero-bg.jpg');
+  background-size: cover;
+  background-position: center;
+  text-align: center;
+  padding: 100px 0;
+}
+
+.hero h1 {
+  font-size: 36px;
+  color: #fff;
+  margin-bottom: 20px;
+}
+
+.hero p {
+  font-size: 18px;
+  color: #fff;
+  margin-bottom: 40px;
+}
+
+.cta-button {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #fff;
+  color: #333;
+  font-weight: bold;
+  border-radius: 5px;
+  text-transform: uppercase;
+}
+
+/* Training Programs Section styles */
+.training-programs {
+  background-color: #fff;
+  padding: 40px;
+  margin-bottom: 40px;
+}
+
+.program {
+  margin-bottom: 30px;
+}
+
+.program h3 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.program-details {
+  margin-bottom: 10px;
+  display: none;
+}
+
+.program-details.expanded {
+  display: block;
+}
+
+.program-details h4 {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.plus-icon {
+  display: inline-block;
+  margin-right: 5px;
+  cursor: pointer;
+}
+
+/* Testimonials Section styles */
+.testimonials {
+  background-color: #f1f1f1;
+  padding: 40px;
+  margin-bottom: 40px;
+}
+
+.testimonial {
+  margin-bottom: 20px;
+}
+
+blockquote {
+  font-style: italic;
+  margin-bottom: 10px;
+}
+
+cite {
+  font-weight: bold;
+}
+
+/* Footer Section styles */
+footer {
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+}
+
+footer p {
+  margin: 0;
+}
+
+/* Media queries */
+@media (max-width: 768px) {
+  .container {
+    padding: 10px;
+  }
+  
+  .hero {
+    padding: 50px 0;
+  }
+  
+  .hero h1 {
+    font-size: 24px;
+  }
+  
+  .hero p {
+    font-size: 16px;
+  }
+  
+  .training-programs {
+    padding: 20px;
+  }
+  
+  .program h3 {
+    font-size: 20px;
+  }
+  
+  .program-details h4 {
+    font-size: 16px;
+  }
+  
+  .testimonials {
+    padding: 20px;
+  }
+  
+  blockquote {
+    font-size: 16px;
+  }
+}
